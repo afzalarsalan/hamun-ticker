@@ -47,44 +47,7 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                  color: Colors.greenAccent),
-              child: Row(
-                children: [
-                  Flexible(
-                    child: TextField(
-                      textAlign: TextAlign.right,
-                    ),
-                  ),
-                  Flexible(
-                    child: TextField(
-                      textAlign: TextAlign.right,
-                    ),
-                  ),
-                  Flexible(
-                    child: TextField(
-                      textAlign: TextAlign.right,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 100),
-            Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                  color: Colors.greenAccent),
-              child: TextField(),
-            ),
-          ],
-        ),
-      ),
+      body: Row(),
     );
   }
 }
