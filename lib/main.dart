@@ -57,7 +57,9 @@ class MyHomePage extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    TextField(),
+                    TextField(
+                      textAlign: TextAlign.end,
+                    ),
                     ButtonBar(
                       children: [
                         FlatButton(
@@ -80,7 +82,9 @@ class MyHomePage extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    TextField(),
+                    TextField(
+                      textAlign: TextAlign.end,
+                    ),
                     ButtonBar(
                       children: [
                         FlatButton(
