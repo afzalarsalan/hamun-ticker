@@ -47,7 +47,59 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: Row(),
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            LimitedBox(
+              maxWidth: 500,
+              child: Card(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    TextField(),
+                    ButtonBar(
+                      children: [
+                        FlatButton(
+                          onPressed: null,
+                          child: Text("Button 1"),
+                        ),
+                        FlatButton(
+                          onPressed: null,
+                          child: Text("Button 2"),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            ),
+            LimitedBox(
+              maxWidth: 500,
+              child: Card(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    TextField(),
+                    ButtonBar(
+                      children: [
+                        FlatButton(
+                          onPressed: null,
+                          child: Text("Button 1"),
+                        ),
+                        FlatButton(
+                          onPressed: null,
+                          child: Text("Button 2"),
+                        )
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
